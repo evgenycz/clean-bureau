@@ -1,9 +1,8 @@
 import { styled } from "styled-components";
+import { FlexColumnCenter } from "../../components/StyledBase/Mixin";
 
 export const LocalizationStyledBottom = styled.section`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    ${FlexColumnCenter}
     margin-top: -10px;
     border: 1px solid var(--primary-orange-color);
     border-radius: 10px;

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { FlexColumnCenter } from "../../StyledBase/Mixin";
 
 export const KitchenStyled = styled.section`
     width: 100%;
@@ -20,9 +21,7 @@ export const KitchenStyled = styled.section`
         z-index: 8;
         position: relative;
         li {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            ${FlexColumnCenter}
             align-items: center;
             list-style: none;
             .ElementList {

@@ -1,10 +1,9 @@
 import { styled } from "styled-components";
+import { FlexColumnCenter } from "../../StyledBase/Mixin";
 
 export const CommentsStyled = styled.div`
     margin: 5vh auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    ${FlexColumnCenter}
     overflow: hidden;
     h1 {
         text-align: center;
@@ -33,9 +32,7 @@ export const CommentsStyled = styled.div`
                 }
             }
             .TextList {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                ${FlexColumnCenter}
                 align-items: center;
                 color: var(--primary-text-color);
                 li {

@@ -13,7 +13,9 @@ export const Footer = ({ langValue, selectedLang }) => {
         <FooterStyled>
             <ul className="FooterMainList">
                 <li>
-                    <h5>{Value.map(({ FooterElement }) => FooterElement)}</h5>
+                    <h5 id="section4">
+                        {Value.map(({ FooterElement }) => FooterElement)}
+                    </h5>
                 </li>
                 <li>
                     <ul className="FooterContacts">

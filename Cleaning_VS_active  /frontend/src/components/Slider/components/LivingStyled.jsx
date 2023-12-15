@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { FlexColumnCenter } from "../../StyledBase/Mixin";
 
 export const LivingStyled = styled.section`
     display: flex;
@@ -20,9 +21,7 @@ export const LivingStyled = styled.section`
         position: relative;
         order: 1;
         li {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            ${FlexColumnCenter}
             align-items: center;
             list-style: none;
             .ElementList {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlexColumnCenter } from "../../StyledBase/Mixin";
 
 export const StyledNotes = styled.div`
     @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -44,9 +45,7 @@ export const StyledNotes = styled.div`
                 }
                 ul {
                     list-style: none;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
+                    ${FlexColumnCenter}
                     align-items: center;
                     li {
                         img {

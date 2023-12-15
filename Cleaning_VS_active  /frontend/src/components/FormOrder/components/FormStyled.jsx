@@ -1,13 +1,12 @@
 import { styled } from "styled-components";
+import { FlexColumnCenter } from "../../StyledBase/Mixin";
 
 export const FormStyled = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 100px;
     form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        ${FlexColumnCenter}
         align-items: flex-start;
         border-radius: 50px;
         box-shadow: 0.5px 0.5px 5px var(--primary-darkblue-color);

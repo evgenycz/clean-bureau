@@ -1,21 +1,17 @@
 import styled from "styled-components";
-import { FlexColumn } from "../../StyledBase/Mixin";
+import { FlexColumn, FlexColumnCenter } from "../../StyledBase/Mixin";
 
 export const StyledServices = styled.div`
     @media screen and (min-width: 320px) and (max-width: 376px) {
         margin-top: 4vh;
         .MainList {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            ${FlexColumnCenter}
             flex-wrap: wrap;
             align-items: center;
             list-style: none;
             width: 95vw;
             margin: 0 auto;
             li {
-                &:first-child {
-                }
                 &:nth-child(2) {
                     li {
                         img {
@@ -138,9 +134,7 @@ export const StyledServices = styled.div`
     @media screen and (min-width: 377px) and (max-width: 767px) {
         margin-top: 80px;
         .MainList {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            ${FlexColumnCenter}
             flex-wrap: wrap;
             align-items: center;
             list-style: none;
@@ -258,9 +252,7 @@ export const StyledServices = styled.div`
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         margin-top: 200px;
         .MainList {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            ${FlexColumnCenter}
             flex-wrap: wrap;
             align-items: center;
             list-style: none;
